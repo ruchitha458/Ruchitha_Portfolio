@@ -35,7 +35,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .contact, footer{
+.about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -73,7 +73,7 @@ section .title::after{
     font-size: 20px;
     color: crimson;
     padding: 0 5px;
-    background: #fff;
+    background: #111;
     transform: translateX(-50%);
 }
 
@@ -101,11 +101,11 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: #111;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #111;
 }
 .navbar .menu li{
     list-style: none;
@@ -113,17 +113,17 @@ section .title::after{
 }
 .navbar .menu li a{
     display: block;
-    color: #fff;
+    color: #111;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #111;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #111;
 }
 
 /* menu btn styling */
@@ -161,11 +161,18 @@ section .title::after{
     filter: brightness(90%);
 }
 
+img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.container { display: table; } 
+.container__inner { display: table-cell; vertical-align: middle; }
 
 /* home section styling */
 .home{
     display: flex;
-    background: url("banner.jpg") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
